@@ -16,7 +16,7 @@ const MessageCard = () => {
             <h1 className="text-left font-bold text-white text-6xl ml-20">OUR LATEST OFFERS</h1>
             <button type="button" className="mx-24 px-2 py-2 text-dark bg-[#FFFFFF] hover:bg-[#E9615A] hover:text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm mt-3 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Send Us Your Opinion</button>   
         </div>
-     );
+    );
 }
- 
+
 export default MessageCard;

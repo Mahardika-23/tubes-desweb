@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-    <nav className="bg-[#96BBC3] border-gray-200 dark:bg-gray-900 shadow-lg">
+    <nav className="bg-[#2F343C] border-gray-200 dark:bg-gray-900 shadow-lg rounded-lg">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
             href="https://flowbite.com/"
@@ -9,7 +9,7 @@ const Navbar = () => {
             <span className="self-center text-2xl font-bold whitespace-nowrap dark:text-white">
             <img
                 className="w-24 rounded"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg"
+                src="../src/assets/just.go-logo.jpg"
                 alt=""
                 />
             </span>
