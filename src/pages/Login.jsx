@@ -20,6 +20,7 @@ const Login = () => {
                 <AiOutlineLock className='absolute top-1 right-5'/>
             </div>
             <button className='w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300' type="submit">Login</button>
+            <Link to={"/home"} className='w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300' type="submit">Login</Link>
             <div>
                 <span className='m-9'>New Here? <Link className='text-blue-500' to='/Register'>Create an Account</Link></span>
             </div>

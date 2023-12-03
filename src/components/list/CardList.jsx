@@ -8,7 +8,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 2,
@@ -16,7 +16,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 5,
@@ -40,7 +40,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -48,7 +48,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -56,7 +56,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -64,7 +64,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -72,7 +72,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -80,7 +80,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -88,7 +88,7 @@ const CardList = () => {
         title: "Kediri, Indonesia",
         location: "tengah hutan tropis",
         stars: 1,
-        price: "Rp 100000"
+        price: "Rp2,681,319"
     },
     {
         id: 6,
@@ -154,20 +154,17 @@ return (
         <>
         <div className="bg-[#232323]">
         {/* <h1 className="font-bold text-center text-white text-3xl py-10">Rekomendasi Liburan Anda</h1> */}
-        <div className=" grid md:grid-cols-4 md:mx-5 grid-cols-2 gap-20  ">
+        <div className=" grid sm:grid-cols-2 sm:gap-5 sm:mx-5 md:grid-cols-3 lg:grid-cols-4 lg:mx-10 lg:gap-10">
             {dummyCardData.map((card) => (
-            <div key={card.id} className="bg-gray-200 p-3 rounded-lg mt-5">
-                <img className="rounded-lg" src={card.src} alt={card.title} />
-                <div className="mt-5">
-                <h2>{card.title}</h2>
+            <div key={card.id} className="bg-gray-200 mt-5 rounded-lg">
+                <img className="rounded-t-lg" src={card.src} alt={card.title} />
+                <div className="px-4 py-4">
+                <h2 className="text-2xl font-bold">{card.title}</h2>
                 <h3>{card.location}</h3>
                 <div className="flex items-center mt-2">
                 {renderStars(card.stars)}
                 </div>
-                    <button>halo</button>
-                <h4 className="">
-                    {card.price}
-                    </h4>
+                <h4 className="text-2xl font-semibold">{card.price}</h4>
                 </div>
             </div>
             ))}

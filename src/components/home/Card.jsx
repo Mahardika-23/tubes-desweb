@@ -6,7 +6,7 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp 100000"
+      price: "Rp2,681,319"
     },
     {
       id: 2,
@@ -14,7 +14,7 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp 100000"
+      price: "Rp3,681,319"
     },
     {
       id: 3,
@@ -22,7 +22,7 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp 100000"
+      price: "Rp5,681,319"
     },
     {
       id: 4,
@@ -30,7 +30,7 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp 100000"
+      price: "Rp8,681,319"
     },
     {
       id: 5,
@@ -38,7 +38,7 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp 100000"
+      price: "Rp1,681,319"
     },
     {
       id: 6,
@@ -46,7 +46,7 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp 100000"
+      price: "Rp1,681,319"
     },
     
   ];
@@ -80,15 +80,15 @@ const Card = () => {
       <h1 className="font-bold text-center text-white text-3xl py-10">Rekomendasi Liburan Anda</h1>
         <div className=" grid grid-cols-3 gap-4 md:mx-10 lg:mx-96 mt-5">
           {dummyCardData.map((card) => (
-            <div key={card.id} className="bg-gray-200 p-3 rounded-lg ">
-              <img className="rounded-lg" src={card.src} alt={card.title} />
-              <div className="mt-5">
-              <h2>{card.title}</h2>
+            <div key={card.id} className="bg-gray-200 rounded-lg ">
+              <img className="rounded-t-lg" src={card.src} alt={card.title} />
+              <div className="px-4 py-4">
+              <h2 className="text-2xl font-bold">{card.title}</h2>
               <h3>{card.location}</h3>
               <div className="flex items-center mt-2">
                 {renderStars(card.stars)}
               </div>
-              <h4 className="text-4xl font-bold">{card.price}</h4>
+              <h4 className="text-2xl font-semibold">{card.price}</h4>
               </div>
             </div>
           ))}
