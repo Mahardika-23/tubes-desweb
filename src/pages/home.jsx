@@ -1,19 +1,34 @@
 import Navbar from "../components/Navbar";
-// import CardHome from "../components/CardHome";
+import SearchBar from "../components/home/SearchButton";
 import Footer from "../components/Footer";
-import Card from "../components/Card";
-// import Banner from "../components/Banner";
-// import MessageCard from "../components/MessageCard";
+import Card from "../components/home/Card";
 
 const Home = () => {
+
+  const containerStyle = {
+    background: 'url("../src/assets/pelayanan-img (1).jpg") center/cover no-repeat', // Replace with your image URL
+  };
+
+  const containerImages = {
+    background: 'url("../src/assets/background-img-ril (1).jpg") center/cover no-repeat', // Replace with your image URL
+};
+
+
   return (
     <div>
       <Navbar />
-      {/* <Banner /> */}
+      <div className="h-96 flex flex-col justify-center items-center" style={containerImages}>
+        <h1 className="font-bold text-white mb-2 text-4xl">mencari pengalaman liburan dari sini</h1>
+        <div className="flex">
+          <SearchBar />
+        </div>
+      </div>
       <div>
         <Card/>
       </div>
-      <div className="-bottom-20"></div>
+      <div className="flex flex-col justify-center h-screen brightness-50" style={containerStyle}>
+          babi
+      </div>
       <Footer />
     </div>
   );

@@ -2,7 +2,7 @@ const Card = () => {
   const dummyCardData = [
     {
       id: 1,
-      src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      src: "../src/assets/img-2.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -10,7 +10,7 @@ const Card = () => {
     },
     {
       id: 2,
-      src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      src: "../src/assets/img-2.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -18,7 +18,7 @@ const Card = () => {
     },
     {
       id: 3,
-      src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      src: "../src/assets/img-2.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -26,7 +26,7 @@ const Card = () => {
     },
     {
       id: 4,
-      src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      src: "../src/assets/img-2.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -34,7 +34,7 @@ const Card = () => {
     },
     {
       id: 5,
-      src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      src: "../src/assets/img-2.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -42,7 +42,7 @@ const Card = () => {
     },
     {
       id: 6,
-      src: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      src: "../src/assets/img-2.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -70,29 +70,32 @@ const Card = () => {
       return "";
     };
 
-    const containerStyle = {
-      background: 'url("https://example.com/your-background-image.jpg") center/cover no-repeat', // Replace with your image URL
-    };
+    // const containerStyle = {
+    //   background: 'url("https://example.com/your-background-image.jpg") center/cover no-repeat', // Replace with your image URL
+    // };
 
     return (
       <>
-      <div className="bg-[#232323]" style={containerStyle}>
-      <h1 className="font-bold text-center text-white text-3xl ">Rekomendasi Liburan Anda</h1>
-        <div className=" grid grid-cols-3 gap-4 md:mx-10 lg:mx-96 mt-2">
+      <div className="bg-[#232323]">
+      <h1 className="font-bold text-center text-white text-3xl py-10">Rekomendasi Liburan Anda</h1>
+        <div className=" grid grid-cols-3 gap-4 md:mx-10 lg:mx-96 mt-5">
           {dummyCardData.map((card) => (
-            <div key={card.id} className="bg-gray-200 p-3 rounded-lg">
+            <div key={card.id} className="bg-gray-200 p-3 rounded-lg ">
               <img className="rounded-lg" src={card.src} alt={card.title} />
+              <div className="mt-5">
               <h2>{card.title}</h2>
               <h3>{card.location}</h3>
               <div className="flex items-center mt-2">
                 {renderStars(card.stars)}
               </div>
-              <h4>{card.price}</h4>
+              <h4 className="text-4xl font-bold">{card.price}</h4>
+              </div>
             </div>
           ))}
         </div>
+          <h1 className="font-bold text-center text-white text-3xl pt-8  pb-2 ">Melanjutkan Penelusuran Tujuan Anda?</h1>
           <div className="flex justify-center mt-3">
-          <button type="button" class="text-white bg-[#2F343C] hover:bg-gray-800 focus:ring-4 focus:ring-green-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">test</button>
+          <button type="button" class="text-white bg-[#2F343C] hover:bg-emerald-600 hover:text-white  transition-colors duration-300 font-medium rounded-full text-sm px-5 py-3 me-2 mb-5 ">tampilkan lebih banyak</button>
           </div>
       </div>
         

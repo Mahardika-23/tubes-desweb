@@ -1,9 +1,8 @@
-import MessageCard from "./MessageCard";
 
 const Footer = () => {
   return (
     <footer>
-      <div className=" bg-[#000000] dark:bg-gray-90 mx-auto mt-28 w-full py-6 p-4 lg:py-8">
+      <div className=" bg-[#000000] mx-auto  w-full py-6 p-4 lg:py-8">
         {/* <div className="-mt-28">
           <MessageCard />
         </div> */}
@@ -90,7 +89,7 @@ const Footer = () => {
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023{" "}
             <a href="https://flowbite.com/" className="hover:underline">
-              Our Gallery™
+              JustGO™
             </a>
             . All Rights Reserved.
           </span>
