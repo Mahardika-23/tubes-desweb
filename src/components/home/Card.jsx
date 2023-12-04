@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Card = () => {
   const dummyCardData = [
     {
       id: 1,
-      src: "../src/assets/img-2.jpg",
+      src: "../src/assets/img-1.jpg",
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
@@ -18,7 +20,7 @@ const Card = () => {
     },
     {
       id: 3,
-      src: "../src/assets/img-2.jpg",
+      src: "../src/assets/img-3.jpg",
       title: "Jakarta, Indonesia",
       location: "pantai kota",
       stars: 1,
@@ -26,7 +28,7 @@ const Card = () => {
     },
     {
       id: 4,
-      src: "../src/assets/img-2.jpg",
+      src: "../src/assets/img-4.jpg",
       title: "Yogyakarta, Indonesia",
       location: "sejarah dan budaya",
       stars: 1,
@@ -34,7 +36,7 @@ const Card = () => {
     },
     {
       id: 5,
-      src: "../src/assets/img-2.jpg",
+      src: "../src/assets/img-5.jpg",
       title: "Bandung, Indonesia",
       location: "pegunungan hijau",
       stars: 1,
@@ -42,7 +44,7 @@ const Card = () => {
     },
     {
       id: 6,
-      src: "../src/assets/img-2.jpg",
+      src: "../src/assets/img-7.jpg",
       title: "Surabaya, Indonesia",
       location: "kota pesisir",
       stars: 1,
@@ -80,7 +82,7 @@ const Card = () => {
         <div className=" grid grid-cols-3 gap-4 md:mx-10 lg:mx-96 mt-5">
           {dummyCardData.map((card) => (
             <div key={card.id} className="bg-gray-200 rounded-lg ">
-              <img className="rounded-t-lg" src={card.src} alt={card.title} />
+              <img className="rounded-t-lg h-64 w-full" src={card.src} alt={card.title} />
               <div className="px-4 py-4">
               <h2 className="text-2xl font-bold">{card.title}</h2>
               <h3>{card.location}</h3>
@@ -94,7 +96,8 @@ const Card = () => {
         </div>
           <h1 className="font-bold text-center text-white text-3xl pt-8  pb-2 ">Melanjutkan Penelusuran Tujuan Anda?</h1>
           <div className="flex justify-center mt-3">
-          <button type="button" class="text-white bg-[#2F343C] hover:bg-emerald-600 hover:text-white  transition-colors duration-300 font-medium rounded-full text-sm px-5 py-3 me-2 mb-5 ">tampilkan lebih banyak</button>
+          
+          <Link to={"/Vacation"} className="text-white bg-[#2F343C] hover:bg-emerald-600 hover:text-white  transition-colors duration-300 font-medium rounded-full text-sm px-5 py-3 me-2 mb-5">Tampilakan Lebih Banyak</Link>
           </div>
       </div>
         

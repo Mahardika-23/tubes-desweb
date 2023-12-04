@@ -19,8 +19,8 @@ const Login = () => {
                 <label htmlFor="" className='absolute text-sm text-white duration-300 transform -translate-y-4 scale-75 top-0 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4'>Your Password</label>
                 <AiOutlineLock className='absolute top-1 right-5'/>
             </div>
-            <button className='w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300' type="submit">Login</button>
-            <Link to={"/home"} className='w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300' type="submit">Login</Link>
+            {/* <button className='w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300' type="submit">Login</button> */}
+            <Link to={"/home"} className=' text-center w-full mb-4 text-[18px] mt-6 rounded-full bg-white text-emerald-800 hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300' type="submit">Login</Link>
             <div>
                 <span className='m-9'>New Here? <Link className='text-blue-500' to='/Register'>Create an Account</Link></span>
             </div>
