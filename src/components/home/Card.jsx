@@ -6,49 +6,48 @@ const Card = () => {
       title: "Kediri, Indonesia",
       location: "tengah hutan tropis",
       stars: 1,
-      price: "Rp2,681,319"
+      price: "Rp2,681,319",
     },
     {
       id: 2,
       src: "../src/assets/img-2.jpg",
-      title: "Kediri, Indonesia",
-      location: "tengah hutan tropis",
+      title: "Bali, Indonesia",
+      location: "pantai eksotis",
       stars: 1,
-      price: "Rp3,681,319"
+      price: "Rp3,681,319",
     },
     {
       id: 3,
       src: "../src/assets/img-2.jpg",
-      title: "Kediri, Indonesia",
-      location: "tengah hutan tropis",
+      title: "Jakarta, Indonesia",
+      location: "pantai kota",
       stars: 1,
-      price: "Rp5,681,319"
+      price: "Rp5,681,319",
     },
     {
       id: 4,
       src: "../src/assets/img-2.jpg",
-      title: "Kediri, Indonesia",
-      location: "tengah hutan tropis",
+      title: "Yogyakarta, Indonesia",
+      location: "sejarah dan budaya",
       stars: 1,
-      price: "Rp8,681,319"
+      price: "Rp8,681,319",
     },
     {
       id: 5,
       src: "../src/assets/img-2.jpg",
-      title: "Kediri, Indonesia",
-      location: "tengah hutan tropis",
+      title: "Bandung, Indonesia",
+      location: "pegunungan hijau",
       stars: 1,
-      price: "Rp1,681,319"
+      price: "Rp1,681,319",
     },
     {
       id: 6,
       src: "../src/assets/img-2.jpg",
-      title: "Kediri, Indonesia",
-      location: "tengah hutan tropis",
+      title: "Surabaya, Indonesia",
+      location: "kota pesisir",
       stars: 1,
-      price: "Rp1,681,319"
+      price: "Rp1,681,319",
     },
-    
   ];
 
 
@@ -103,6 +102,7 @@ const Card = () => {
     );
   };
   
+
   export default Card;
   // <div class="bg-white border border-gray-200 rounded-lg shadow">
   //     <a href="#">
