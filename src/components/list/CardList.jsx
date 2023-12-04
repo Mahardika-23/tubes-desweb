@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"
 
 const CardList = () => {
     const dummyCardData = [
@@ -6,7 +7,9 @@ const CardList = () => {
         id: 1,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -14,7 +17,9 @@ const CardList = () => {
         id: 2,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -22,7 +27,9 @@ const CardList = () => {
         id: 3,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -30,7 +37,9 @@ const CardList = () => {
         id: 4,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -38,7 +47,9 @@ const CardList = () => {
         id: 5,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -46,7 +57,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -54,7 +67,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -62,7 +77,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -70,7 +87,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -78,7 +97,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -86,7 +107,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp2,681,319"
     },
@@ -94,7 +117,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp 100000"
     },
@@ -102,7 +127,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp 100000"
     },
@@ -110,7 +137,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp 100000"
     },
@@ -118,7 +147,9 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp 100000"
     },
@@ -126,11 +157,20 @@ const CardList = () => {
         id: 6,
         src: "../src/assets/img-2.jpg",
         title: "Kediri, Indonesia",
+        ubtitle:"villa kecil Mezzanine Nyaman 4 menit dari Pantai",
         location: "tengah hutan tropis",
+        isi: "2 TAMU - 2 KAMAR TIDUR - 2 TEMPAT TIDUR - 1 KAMAR MANDI",
         stars: 1,
         price: "Rp 100000"
     },
     ];
+
+    const navigate = useNavigate();
+  
+    const handleCardClick = (card) => {
+      console.log("Clicked Card Data:", card); // Log the clicked card for debugging
+      navigate(`/detail`, { state: { cardData: card } });
+    };
 
 
     const renderStars = (numStars) => {
@@ -156,7 +196,7 @@ return (
         {/* <h1 className="font-bold text-center text-white text-3xl py-10">Rekomendasi Liburan Anda</h1> */}
         <div className=" grid sm:grid-cols-2 sm:gap-5 sm:mx-5 md:grid-cols-3 lg:grid-cols-4 lg:mx-10 lg:gap-10">
             {dummyCardData.map((card) => (
-            <div key={card.id} className="bg-gray-200 mt-5 rounded-lg">
+            <div key={card.id} className="bg-gray-200 mt-5 rounded-lg" onClick={() => handleCardClick(card)}>
                 <img className="rounded-t-lg" src={card.src} alt={card.title} />
                 <div className="px-4 py-4">
                 <h2 className="text-2xl font-bold">{card.title}</h2>
