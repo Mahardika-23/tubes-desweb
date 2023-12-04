@@ -1,5 +1,5 @@
-// import { useEffect, useRef, useState } from "react";
-// import { Link } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     
@@ -15,8 +15,10 @@ const Navbar = () => {
                 <a href="#" className="text-gray-900 hover:text-gray-700"></a>
             </div>
             <div className="">
-                <button type="button" class="text-white bg-[#2F343C] hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">Register</button>
-            </div>
+          <Link to="/register" className="text-white bg-[#2F343C] hover:bg-emerald-600 hover:text-white py-2 transition-colors duration-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">
+            Register
+          </Link>
+        </div>
         </div>
     </nav>
     
