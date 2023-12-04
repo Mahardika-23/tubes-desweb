@@ -1,17 +1,15 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Card } from "../components/Card";
-// import Banner from "../components/banner";
-// import MessageCard from "../components/MessageCard";
+import { Detailcard } from "../components/Card";
 
-const Home = () => {
+const Detail = () => {
   return (
     <div>
       <Navbar />
       {/* <Banner /> */}
-      <Card />
+      <Detailcard />
       {/* <div className="-bottom-20"> */}
-      <Footer />
+        <Footer />
       {/* </div> */}
         
       
@@ -20,4 +18,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Detail;
