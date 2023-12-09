@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Detailcard } from "../components/home/Card";
 
-const Detail = () => {
+const Form = () => {
   return (
     <div>
       <Navbar />
@@ -13,9 +13,8 @@ const Detail = () => {
       {/* </div> */}
         
       
-      
     </div>
   );
 };
 
-export default Detail;
+export default Form;
